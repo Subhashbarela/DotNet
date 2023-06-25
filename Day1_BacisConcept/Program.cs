@@ -10,7 +10,7 @@ namespace Day1_BacisConcept
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("1: Class And Object \n2: Tyeps Of Variable ");
+            Console.WriteLine("1: Class And Object \n2: Tyeps Of Variable \n3: Types Of Method ");
             Console.WriteLine("Enter the choice");
             int choice = int.Parse(Console.ReadLine());
             switch (choice)
@@ -29,9 +29,22 @@ namespace Day1_BacisConcept
                         Console.WriteLine("Name is : " + v.StringMethod());
                         break;
                     }
+                case 3:
+                    {
+                        MethodClass methodClass = new MethodClass();
+                        methodClass.NormalMethod();
+                        MethodClass.StaticMethod();
+                        break;
+                    }
+                default:
+                    {
+                        Console.WriteLine("invalid choice ");
+                        break;
+                    }
             }
             Console.ReadLine();
         }
+    
     
     }
 }

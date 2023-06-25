@@ -10,7 +10,9 @@ namespace Day1_BacisConcept
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("hello world");
+            Student s = new Student(101, "subhash", 26);
+            s.Show();
+            Console.ReadLine();
         }
     }
 }
